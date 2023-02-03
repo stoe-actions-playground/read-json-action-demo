@@ -8,7 +8,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: read_json.sh
+    - run: $GITHUB_ACTION_PATH/read_json.sh
       shell: bash
       env:
         JSON_FILE_PATH: ${{ inputs.json_file_path }}

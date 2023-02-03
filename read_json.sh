@@ -3,7 +3,7 @@
 # Usage: read_json.sh path/to/file.json
 
 # read file contents into variable
-json=$(cat $1)
+json=$(cat $JSON_FILE_PATH)
 
 # print contents to stdout
-echo $json
+echo $json|jq
