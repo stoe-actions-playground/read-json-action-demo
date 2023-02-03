@@ -1,0 +1,12 @@
+name: 'Read JSON file'
+description: 'Read JSON file'
+inputs:
+  json_file_path:
+    description: 'path to your JSON file'
+    required: true
+    default: 'demo.json'
+runs:
+  using: "composite"
+  steps:
+    - run: read_json.sh
+      shell: bash
